@@ -1,12 +1,15 @@
 # Write your solution here
+# Let's take the square root of math-module in use
+from math import sqrt
 
-times = int(input("How many times a week do you eat at the student cafeteria? "))
-price = int(input("The price of a typical student lunch? "))
-money = int(input("How much money do you spend on groceries in a week? "))
+# Note that the square root can also be calculated using power.
+# sqrt(9) is equivalent to 9 ** 0.5
 
-daily = (price * times / 7) + (money / 7)
-weekly = price * times + money
+a = int(input("Value of a: "))
+b = int(input("Value of b: "))
+c = int(input("Value of c: "))
 
-print("Average food expenditure:")
-print(f"Daily: {daily} euros")
-print(f"Weekly: {weekly} euros")
+sol1 = (-b + sqrt(b ** 2 - 4 * a * c) / (2 * a))
+sol2 = (-b - sqrt(b ** 2 - 4 * a * c) / (2 * a))
+
+print(f"The roots are {sol1} and {sol2}")
